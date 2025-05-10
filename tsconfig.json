@@ -5,7 +5,7 @@
   "compilerOptions": {
     "paths": {
       "core": [
-        "./dist/core"
+        "dist/mdevhub"
       ]
     },
     "outDir": "./dist/out-tsc",
