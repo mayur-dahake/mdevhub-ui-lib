@@ -3,5 +3,38 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+    "mdevhub": {
+      "projectType": "library",
+      "root": "projects/mdevhub",
+      "sourceRoot": "projects/mdevhub/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/mdevhub/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/mdevhub/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/mdevhub/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/mdevhub/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
+    }
   }
 }
