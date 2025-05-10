@@ -7,4 +7,4 @@ export * from './lib/mdevhub.component';
 export * from  './lib/mdevhub.module';
 
 //Individual components
-export * from './lib/mdevhub-paginator/mdevhub-paginator.component';
+export * from './lib/mdevhub-paginator';

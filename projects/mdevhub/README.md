@@ -97,7 +97,6 @@ onPageSizeChange(newSize: number) {
 ## 🤝 Contributing
 
 Want to improve this library or add new components? Contributions are welcome!  
-Please submit issues or PRs via GitHub.
 
 ---
 
@@ -109,7 +108,3 @@ Please submit issues or PRs via GitHub.
 - 💻 [GitHub](https://github.com/mayur-dahake)
 
 ---
-
-## 📃 License
-
-This project is licensed under the MIT License.
