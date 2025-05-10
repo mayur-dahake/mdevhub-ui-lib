@@ -30,12 +30,12 @@ Import the desired modules in your Angular module or component:
 
 ```ts
 // Example in a standalone component
-import { CustomPaginatorComponent } from 'mdevhub';
+import { MDevHubPaginatorComponent } from 'mdevhub';
 
 @Component({
   selector: 'app-demo',
   standalone: true,
-  imports: [CustomPaginatorComponent],
+  imports: [MDevHubPaginatorComponent],
   ...
 })
 ```
@@ -44,12 +44,12 @@ Or if you're using an NgModule:
 
 ```ts
 import { NgModule } from '@angular/core';
-import { CustomPaginatorComponent } from 'mdevhub';
+import { MDevHubPaginatorComponent } from 'mdevhub';
 
 @NgModule({
   declarations: [...],
   imports: [
-    CustomPaginatorComponent
+    MDevHubPaginatorComponent
   ]
 })
 export class YourModule {}
@@ -60,13 +60,13 @@ export class YourModule {}
 ## 🧪 Example - Using the Custom Paginator
 
 ```html
-<app-custom-paginator
+<mdevhub-paginator
   [totalRecords]="totalRecords"
   [itemsPerPage]="pageSize"
   [currentPage]="currentPage"
   (pageChange)="onPageChange($event)"
   (pageSizeChange)="onPageSizeChange($event)">
-</app-custom-paginator>
+</mdevhub-paginator>
 ```
 
 ```ts
@@ -89,7 +89,8 @@ onPageSizeChange(newSize: number) {
 
 ## 🛠️ Components Available
 
-- ✅ `CustomPaginatorComponent` – fully functional paginator
+- ✅ `MDevHubPaginatorComponent` –  [Demo](https://www.linkedin.com/in/mayurdahake)  fully functional paginator
+      🔗 [GitHub](https://github.com/mayur-dahake/custom-paginations)  💻 [Demo](https://custom-paginations.vercel.app/)
 - 🛠️ More coming soon...
 
 ---
