@@ -1,1 +1,0 @@
-export * from './mdevhub-pagination.component'

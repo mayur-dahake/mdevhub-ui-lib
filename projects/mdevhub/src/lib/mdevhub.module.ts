@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
-import { MdevhubPaginationComponent } from './mdevhub-pagination/mdevhub-pagination.component';
+import { MDevHubPaginatorComponent } from './mdevhub-paginator/mdevhub-paginator.component';
 
 
 @NgModule({
-  imports: [MdevhubPaginationComponent],
-  exports: [MdevhubPaginationComponent]
+  imports: [MDevHubPaginatorComponent],
+  exports: [MDevHubPaginatorComponent]
 })
 export class MDevHubModule {}

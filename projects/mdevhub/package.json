@@ -1,12 +1,18 @@
 {
-  "name": "core",
-  "version": "0.0.1",
+  "name": "mdevhub",
+  "version": "1.0.4",
+  "author": "Mayur Dahake",
+  "description": "A modular Angular UI library with custom reusable components.",
+    "repository": {
+    "type": "git",
+    "url": "https://github.com/mayur-dahake/mdevhub-ui-lib"
+  },
   "peerDependencies": {
     "@angular/common": "^19.2.0",
-    "@angular/core": "^19.2.0"
+    "@angular/core": "^19.2.0",
+    "@angular/material": "^19.2.15"
   },
   "dependencies": {
-    "@angular/material": "^19.2.15",
     "tslib": "^2.3.0"
   },
   "sideEffects": false
