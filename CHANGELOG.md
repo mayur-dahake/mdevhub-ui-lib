@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.6](https://github.com/mayur-dahake/mdevhub-ui-lib/compare/v1.1.5...v1.1.6) (2025-05-24)
+
+
+### 🔧 Chores
+
+* **release:** bump version to match library ([eb19bd6](https://github.com/mayur-dahake/mdevhub-ui-lib/commit/eb19bd60be421c42098bea3750fdf0b4e4dae9e2))
+
+
+### 📝 Documentation
+
+* update README.md to enhance project description and usage instructions ([adcf48c](https://github.com/mayur-dahake/mdevhub-ui-lib/commit/adcf48cb1cbd807baad5666a5eb1ad2ab1500be6))
+
 ### [1.1.5](https://github.com/mayur-dahake/mdevhub-ui-lib/compare/v1.1.4...v1.1.5) (2025-05-24)
 
 
