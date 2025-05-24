@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.10](https://github.com/mayur-dahake/mdevhub-ui-lib/compare/v1.0.9...v1.0.10) (2025-05-24)
+
+
+### 🐞 Bug Fixes
+
+* specify release type for version bump in workflow ([6c58090](https://github.com/mayur-dahake/mdevhub-ui-lib/commit/6c58090c3b71001018f53eaddf3dd3e4d8f744c1))
+
 ### [1.0.9](https://github.com/mayur-dahake/mdevhub-ui-lib/compare/v1.0.8...v1.0.9) (2025-05-24)
 
 
