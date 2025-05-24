@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.8](https://github.com/mayur-dahake/mdevhub-ui-lib/compare/v1.0.7...v1.0.8) (2025-05-24)
+
+
+### 🐞 Bug Fixes
+
+* update build command to use npm for Angular library ([825695a](https://github.com/mayur-dahake/mdevhub-ui-lib/commit/825695a948f67c81f7dd419b67316eb6d528d885))
+
 ### [1.0.7](https://github.com/mayur-dahake/mdevhub-ui-lib/compare/v1.0.6...v1.0.7) (2025-05-24)
 
 
