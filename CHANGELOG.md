@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.4](https://github.com/mayur-dahake/mdevhub-ui-lib/compare/v1.1.3...v1.1.4) (2025-05-24)
+
+
+### 🐞 Bug Fixes
+
+* update dependency installation to use npm ci and specify version bump type ([10ec3c9](https://github.com/mayur-dahake/mdevhub-ui-lib/commit/10ec3c99151debca2003253a8df3d289e400dad4))
+
 ### [1.1.3](https://github.com/mayur-dahake/mdevhub-ui-lib/compare/v1.1.2...v1.1.3) (2025-05-24)
 
 
