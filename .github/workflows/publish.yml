@@ -4,7 +4,7 @@ on:
   pull_request:
     types: [closed]
     branches:
-      - main  # Destination branch to publish from
+      - master  # Destination branch to publish from
 
 jobs:
   build-and-publish:
