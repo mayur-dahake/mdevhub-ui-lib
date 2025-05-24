@@ -37,6 +37,9 @@ jobs:
 
       - name: Bump version and generate changelog
         run: npx npx standard-version --release-as patch
+        	
+      - name: Check updated version
+        run: cat package.json | grep version
 
       - name: Push version commit and tags
         env:
