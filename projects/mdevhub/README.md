@@ -1,63 +1,88 @@
-# Core
+# MDevHub - Angular UI Component Library
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.0.
+**MDevHub** is an open-source Angular UI component library designed to provide reusable, customizable, and modern components like custom paginators, data tables, and more — all built using Angular and Material.
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## ✨ Features
 
-```bash
-ng generate component component-name
-```
+- 📦 Plug-and-play Angular components
+- 🎨 Built on Angular Material
+- 🧩 Modular architecture (easy to scale and customize)
+- 🚀 Ready for enterprise and personal projects
+- 🌱 Actively maintained and open to contributions
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
+## 📦 Installation
 
-## Building
-
-To build the library, run:
+Install the package using npm:
 
 ```bash
-ng build core
+npm install mdevhub
 ```
 
-This command will compile your project, and the build artifacts will be placed in the `dist/` directory.
+---
 
-### Publishing the Library
+## 🔧 Usage
 
-Once the project is built, you can publish your library by following these steps:
+Import the desired modules in your Angular module or component:
 
-1. Navigate to the `dist` directory:
-   ```bash
-   cd dist/core
-   ```
+```ts
+// Example in a standalone component
+import { MDevHubPaginatorComponent,MdevhubFileUploaderComponent } from 'mdevhub';
 
-2. Run the `npm publish` command to publish your library to the npm registry:
-   ```bash
-   npm publish
-   ```
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
+@Component({
+  selector: 'app-demo',
+  standalone: true,
+  imports: [MDevHubPaginatorComponent,MdevhubFileUploaderComponent],
+    template: `
+    <mdevhub-paginator ...></mdevhub-paginator>
+    <mdevhub-file-uploader></mdevhub-file-uploader>
+  `
+})
 ```
 
-## Running end-to-end tests
+Or if you're using an NgModule:
 
-For end-to-end (e2e) testing, run:
+```ts
+import { NgModule } from '@angular/core';
+import { MDevHubPaginatorComponent,MdevhubFileUploaderComponent } from 'mdevhub';
 
-```bash
-ng e2e
+@NgModule({
+  declarations: [...],
+  imports: [
+    MDevHubPaginatorComponent,
+    MdevhubFileUploaderComponent
+  ]
+})
+export class YourModule {}
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+---
 
-## Additional Resources
+## 🛠️ Components Available
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- ✅ `MDevHubPaginatorComponent` –  [Demo](https://www.linkedin.com/in/mayurdahake)  fully functional paginator
+      🔗 [GitHub](https://github.com/mayur-dahake/custom-paginations)  💻 [Demo](https://custom-paginations.vercel.app/)
+- ✅ `MdevhubFileUploaderComponent` – Modern file uploader with drag & drop, preview, and URL upload  
+      🔗 [GitHub](https://github.com/mayur-dahake/mdevhub-ui-lib) 💻 [Demo](https://mdevhub-file-uploader-demo.vercel.app/)
+
+- 🛠️ More coming soon...
+
+---
+
+## 🤝 Contributing
+
+Want to improve this library or add new components? Contributions are welcome!  
+
+---
+
+## 👨‍💻 Author
+
+**Mayur Dahake**
+
+- 🔗 [LinkedIn](https://www.linkedin.com/in/mayurdahake)
+- 💻 [GitHub](https://github.com/mayur-dahake)
+
+---
