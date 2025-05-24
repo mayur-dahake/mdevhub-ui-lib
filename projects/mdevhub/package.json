@@ -1,9 +1,9 @@
 {
   "name": "mdevhub",
-  "version": "1.0.5",
+  "version": "1.1.5",
   "author": "Mayur Dahake",
   "description": "A modular Angular UI library with custom reusable components.",
-    "repository": {
+  "repository": {
     "type": "git",
     "url": "https://github.com/mayur-dahake/mdevhub-ui-lib.git"
   },
