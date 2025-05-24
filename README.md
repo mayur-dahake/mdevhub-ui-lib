@@ -1,59 +1,111 @@
-# MdevhubUiLib
+# MDevHub - Angular UI Component Library
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.1.
+**MDevHub** is an open-source Angular UI component library designed to provide reusable, customizable, and modern components like custom paginators, data tables, and more — all built using Angular and Material.
 
-## Development server
+---
 
-To start a local development server, run:
+## ✨ Features
 
-```bash
-ng serve
-```
+- 📦 Plug-and-play Angular components
+- 🎨 Built on Angular Material
+- 🧩 Modular architecture (easy to scale and customize)
+- 🚀 Ready for enterprise and personal projects
+- 🌱 Actively maintained and open to contributions
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## 📦 Installation
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Install the package using npm:
 
 ```bash
-ng generate --help
+npm install mdevhub
 ```
 
-## Building
+---
 
-To build the project run:
+## 🔧 Usage
 
-```bash
-ng build
+Import the desired modules in your Angular module or component:
+
+```ts
+// Example in a standalone component
+import { MDevHubPaginatorComponent } from 'mdevhub';
+
+@Component({
+  selector: 'app-demo',
+  standalone: true,
+  imports: [MDevHubPaginatorComponent],
+  ...
+})
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Or if you're using an NgModule:
 
-## Running unit tests
+```ts
+import { NgModule } from '@angular/core';
+import { MDevHubPaginatorComponent } from 'mdevhub';
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
+@NgModule({
+  declarations: [...],
+  imports: [
+    MDevHubPaginatorComponent
+  ]
+})
+export class YourModule {}
 ```
 
-## Running end-to-end tests
+---
 
-For end-to-end (e2e) testing, run:
+## 🧪 Example - Using the Custom Paginator
 
-```bash
-ng e2e
+```html
+<mdevhub-paginator
+  [totalRecords]="totalRecords"
+  [itemsPerPage]="pageSize"
+  [currentPage]="currentPage"
+  (pageChange)="onPageChange($event)"
+  (pageSizeChange)="onPageSizeChange($event)">
+</mdevhub-paginator>
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+```ts
+// In your component.ts
+totalRecords = 100;
+pageSize = 10;
+currentPage = 1;
 
-## Additional Resources
+onPageChange(newPage: number) {
+  this.currentPage = newPage;
+}
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+onPageSizeChange(newSize: number) {
+  this.pageSize = newSize;
+  this.currentPage = 1;
+}
+```
+
+---
+
+## 🛠️ Components Available
+
+- ✅ `MDevHubPaginatorComponent` –  [Demo](https://www.linkedin.com/in/mayurdahake)  fully functional paginator
+      🔗 [GitHub](https://github.com/mayur-dahake/custom-paginations)  💻 [Demo](https://custom-paginations.vercel.app/)
+- 🛠️ More coming soon...
+
+---
+
+## 🤝 Contributing
+
+Want to improve this library or add new components? Contributions are welcome!  
+
+---
+
+## 👨‍💻 Author
+
+**Mayur Dahake**
+
+- 🔗 [LinkedIn](https://www.linkedin.com/in/mayurdahake)
+- 💻 [GitHub](https://github.com/mayur-dahake)
+
+---

@@ -1,10 +1,10 @@
 /*
- * Public API Surface of core
+ * Public API Surface of mdevhub
  */
 
-export * from './lib/core.service';
-export * from './lib/core.component';
+export * from './lib/mdevhub.service';
+export * from './lib/mdevhub.component';
 export * from  './lib/mdevhub.module';
 
 //Individual components
-export * from './lib/mdevhub-pagination/mdevhub-pagination.component';
+export * from './lib/mdevhub-paginator';
