@@ -30,13 +30,16 @@ Import the desired modules in your Angular module or component:
 
 ```ts
 // Example in a standalone component
-import { MDevHubPaginatorComponent } from 'mdevhub';
+import { MDevHubPaginatorComponent,MdevhubFileUploaderComponent } from 'mdevhub';
 
 @Component({
   selector: 'app-demo',
   standalone: true,
-  imports: [MDevHubPaginatorComponent],
-  ...
+  imports: [MDevHubPaginatorComponent,MdevhubFileUploaderComponent],
+    template: `
+    <mdevhub-paginator ...></mdevhub-paginator>
+    <mdevhub-file-uploader></mdevhub-file-uploader>
+  `
 })
 ```
 
@@ -44,45 +47,16 @@ Or if you're using an NgModule:
 
 ```ts
 import { NgModule } from '@angular/core';
-import { MDevHubPaginatorComponent } from 'mdevhub';
+import { MDevHubPaginatorComponent,MdevhubFileUploaderComponent } from 'mdevhub';
 
 @NgModule({
   declarations: [...],
   imports: [
-    MDevHubPaginatorComponent
+    MDevHubPaginatorComponent,
+    MdevhubFileUploaderComponent
   ]
 })
 export class YourModule {}
-```
-
----
-
-## 🧪 Example - Using the Custom Paginator
-
-```html
-<mdevhub-paginator
-  [totalRecords]="totalRecords"
-  [itemsPerPage]="pageSize"
-  [currentPage]="currentPage"
-  (pageChange)="onPageChange($event)"
-  (pageSizeChange)="onPageSizeChange($event)">
-</mdevhub-paginator>
-```
-
-```ts
-// In your component.ts
-totalRecords = 100;
-pageSize = 10;
-currentPage = 1;
-
-onPageChange(newPage: number) {
-  this.currentPage = newPage;
-}
-
-onPageSizeChange(newSize: number) {
-  this.pageSize = newSize;
-  this.currentPage = 1;
-}
 ```
 
 ---
@@ -91,6 +65,9 @@ onPageSizeChange(newSize: number) {
 
 - ✅ `MDevHubPaginatorComponent` –  [Demo](https://www.linkedin.com/in/mayurdahake)  fully functional paginator
       🔗 [GitHub](https://github.com/mayur-dahake/custom-paginations)  💻 [Demo](https://custom-paginations.vercel.app/)
+- ✅ `MdevhubFileUploaderComponent` – Modern file uploader with drag & drop, preview, and URL upload  
+      🔗 [GitHub](https://github.com/mayur-dahake/mdevhub-ui-lib) 💻 [Demo](https://mdevhub-file-uploader-demo.vercel.app/)
+
 - 🛠️ More coming soon...
 
 ---
