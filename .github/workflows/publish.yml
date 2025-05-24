@@ -46,7 +46,7 @@ jobs:
           git push origin HEAD:master --follow-tags
 
       - name: Build Angular library
-        run: ng build mdevhub  # Adjust if your script name differs
+        run: npm run build:lib  # Adjust if your script name differs
 
       - name: Publish to npm
         run: |
