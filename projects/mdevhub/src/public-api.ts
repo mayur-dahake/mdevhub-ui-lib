@@ -8,3 +8,4 @@ export * from  './lib/mdevhub.module';
 
 //Individual components
 export * from './lib/mdevhub-paginator';
+export * from './lib/mdevhub-file-uploader';
