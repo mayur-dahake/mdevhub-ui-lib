@@ -4,7 +4,11 @@ on:
   pull_request:
     types: [closed]
     branches:
-      - master  # Destination branch to publish from
+      - master  # Replace with your target release branch if needed
+
+permissions:
+  contents: write  # Required to push tags and commits
+  id-token: write  # For npm provenance (optional)
 
 jobs:
   build-and-publish:
@@ -18,10 +22,10 @@ jobs:
       - name: Set up latest Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 'node'  # 'node' uses the latest stable Node.js
+          node-version: 'node'
           registry-url: 'https://registry.npmjs.org'
 
-      - name: Set Git user identity
+      - name: Configure Git identity
         run: |
           git config --global user.name "mayur dahake"
           git config --global user.email "mayurdahake13@gmail.com"
@@ -37,10 +41,10 @@ jobs:
           GH_PAT: ${{ secrets.GH_PAT }}
         run: |
           git remote set-url origin https://x-access-token:${GH_PAT}@github.com/${{ github.repository }}.git
-          git push --follow-tags origin master
+          git push origin HEAD:master --follow-tags
 
       - name: Build Angular library
-        run: npm run build:lib  # Replace with actual build command if different
+        run: npm run build:lib  # Adjust if your script name differs
 
       - name: Publish to npm
         run: npm publish dist/mdevhub --access public
