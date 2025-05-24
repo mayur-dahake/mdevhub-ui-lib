@@ -1,0 +1,13 @@
+{
+  "types": [
+    { "type": "feat", "section": "✨ Features" },
+    { "type": "fix", "section": "🐞 Bug Fixes" },
+    { "type": "docs", "section": "📝 Documentation" },
+    { "type": "refactor", "section": "🔨 Refactors" },
+    { "type": "test", "section": "✅ Tests" },
+    { "type": "chore", "section": "🔧 Chores", "hidden": false }
+  ],
+  "skip": {
+    "tag": false
+  }
+}

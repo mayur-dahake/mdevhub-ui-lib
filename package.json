@@ -7,9 +7,13 @@
     "build": "ng build mdevhub",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-     "release": "standard-version"
+    "release": "standard-version",
+    "release:minor": "standard-version --release-as minor",
+    "release:patch": "standard-version --release-as patch",
+    "release:major": "standard-version --release-as major",
+    "build:lib": "ng build mdevhub"
   },
-   "publishConfig": {
+  "publishConfig": {
     "access": "public"
   },
   "private": false,
@@ -39,6 +43,7 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "ng-packagr": "^19.2.0",
+    "standard-version": "^9.5.0",
     "typescript": "~5.7.2"
   }
 }
