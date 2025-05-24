@@ -2,6 +2,35 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.4](https://github.com/mayur-dahake/mdevhub-ui-lib/compare/v1.1.3...v1.1.4) (2025-05-24)
+
+
+### 🐞 Bug Fixes
+
+* update dependency installation to use npm ci and specify version bump type ([10ec3c9](https://github.com/mayur-dahake/mdevhub-ui-lib/commit/10ec3c99151debca2003253a8df3d289e400dad4))
+
+### [1.1.3](https://github.com/mayur-dahake/mdevhub-ui-lib/compare/v1.1.2...v1.1.3) (2025-05-24)
+
+
+### 🐞 Bug Fixes
+
+* streamline version bump process in workflow ([2064e30](https://github.com/mayur-dahake/mdevhub-ui-lib/commit/2064e30e7f779fda7e765bbfa9369cd25348c8c8))
+
+### [1.1.2](https://github.com/mayur-dahake/mdevhub-ui-lib/compare/v1.0.10...v1.1.2) (2025-05-24)
+
+
+### 🔧 Chores
+
+* **release:** 1.1.0 ([259fe47](https://github.com/mayur-dahake/mdevhub-ui-lib/commit/259fe47a69c1d2b7f3f1bfbf5f2e945cb4b3e2de))
+* **release:** 1.1.1 ([feec97c](https://github.com/mayur-dahake/mdevhub-ui-lib/commit/feec97cfc54ff40a4eafdd0fd96409c92f1ec0e2))
+
+
+### 🐞 Bug Fixes
+
+* add step to check updated version after version bump in workflow ([6dfcbb6](https://github.com/mayur-dahake/mdevhub-ui-lib/commit/6dfcbb6d4830af04561d6e1b26eebb302abd87e8))
+* remove duplicate npx in version bump command ([14bac27](https://github.com/mayur-dahake/mdevhub-ui-lib/commit/14bac27fa6ca4ac9db17e52bc004309c70b79fc1))
+* remove release-as option from version bump command in workflow ([43e7deb](https://github.com/mayur-dahake/mdevhub-ui-lib/commit/43e7deb1dd8320a4ac73d2e74a736e762472b1f9))
+
 ### [1.1.1](https://github.com/mayur-dahake/mdevhub-ui-lib/compare/v1.1.0...v1.1.1) (2025-05-24)
 
 ## 1.1.0 (2025-05-24)
