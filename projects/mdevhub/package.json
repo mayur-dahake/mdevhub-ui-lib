@@ -5,7 +5,7 @@
   "description": "A modular Angular UI library with custom reusable components.",
     "repository": {
     "type": "git",
-    "url": "https://github.com/mayur-dahake/mdevhub-ui-lib"
+    "url": "https://github.com/mayur-dahake/mdevhub-ui-lib.git"
   },
   "peerDependencies": {
     "@angular/common": "^19.2.0",
