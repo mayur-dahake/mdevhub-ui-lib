@@ -4,11 +4,11 @@ on:
   pull_request:
     types: [closed]
     branches:
-      - master  # Replace with your target release branch if needed
+      - master
 
 permissions:
-  contents: write  # Required to push tags and commits
-  id-token: write  # For npm provenance (optional)
+  contents: write
+  id-token: write
 
 jobs:
   build-and-publish:
@@ -19,9 +19,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Fetch all history for all branches and tags
+          fetch-depth: 0
 
-      - name: Set up latest Node.js
+      - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 'node'
@@ -33,15 +33,21 @@ jobs:
           git config --global user.email "mayurdahake13@gmail.com"
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
       - name: Bump version and generate changelog
-        run: npx standard-version --release-as patch       	
+        run: npx standard-version
 
-      - name: Commit any changes (e.g., changelog or version bump)
+      - name: Sync version to library package.json
         run: |
-          git add package.json CHANGELOG.md package-lock.json || true
-          git commit -m "chore(release): version bump by GitHub Action" || true
+          VERSION=$(node -p "require('./package.json').version")
+          echo "Using version $VERSION"
+          jq ".version=\"$VERSION\"" projects/mdevhub/package.json > temp.json && mv temp.json projects/mdevhub/package.json
+
+      - name: Commit version bump if needed
+        run: |
+          git add package.json projects/mdevhub/package.json CHANGELOG.md || true
+          git commit -m "chore(release): bump version to match library" || true
 
       - name: Push version commit and tags
         env:
@@ -51,7 +57,7 @@ jobs:
           git push origin HEAD:master --follow-tags
 
       - name: Build Angular library
-        run: npm run build:lib  # Adjust if your script name differs
+        run: npm run build:lib
 
       - name: Publish to npm
         run: |
