@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.5](https://github.com/mayur-dahake/mdevhub-ui-lib/compare/v1.1.4...v1.1.5) (2025-05-24)
+
+
+### 🐞 Bug Fixes
+
+* update publish workflow for improved version syncing and dependency installation ([841acd1](https://github.com/mayur-dahake/mdevhub-ui-lib/commit/841acd10b21b6329d0b4201b600d931d5dc82995))
+* update version number to 1.0.5 in package.json and package-lock.json ([177034b](https://github.com/mayur-dahake/mdevhub-ui-lib/commit/177034bcc436a54ce999a384a058f83d8bd2d274))
+
 ### [1.1.4](https://github.com/mayur-dahake/mdevhub-ui-lib/compare/v1.1.3...v1.1.4) (2025-05-24)
 
 
